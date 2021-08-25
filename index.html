@@ -1,1 +1,107 @@
-<h1>Hello world!</h1>
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js lt-ie8 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if !(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>james kingsmill</title>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src=js/app.js></script>
+    </head>
+    <body>
+        <div id="sidebar">
+            <div id="sidebar-links">
+            <a href="#about" title="Who I am and what I believe" rel="about">about me</a>
+            <a class="work" href="#work" title="Work that I've done" rel="work">work</a>
+            <a href="#writing" title="Things I've written" rel="writing">writing</a>
+            <a href="#presentations" title="Presentations I've made" rel="presentations">presentations</a>
+            <a href="#community" title="Community work" rel="community">community</a>
+            <a class="contact" href="#contact" title="Get in touch" rel="contact">contact me</a>
+            </div>
+        </div>
+    
+        <header id="top">
+            <h1>james kingsmill</h1>
+        </header>
+
+        <div id="content">
+            <div id="about" class="section">
+                <h3>about</h3>
+                <p>solutions architect at AWS. i believe that:</p>
+                    <ul>
+                        <li>more frequent deployments lead to better user outcomes</li>
+                        <li>devops is about culture and incentives</li>
+                        <li>serverless is a better developer experience</li>
+                        <li>observability isn't monitoring</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div id="work" class="section">
+                <h3>stuff i've done</h3>
+                <p>lead developer of the <a href="https://github.com/aws-quickstart/quickstart-compliance-irap-protected" target="_blank">AWS IRAP Quick Start</a></p>
+                <p>sole developer of the <a href="https://docs.aws.amazon.com/config/latest/developerguide/operational-best-practices-for-acsc-ism.html" target="_blank">AWS ISM Conformance Pack</a></p>
+                <p>the Australian Government <a href="https://www.dta.gov.au/our-projects/secure-cloud-strategy" target="_blank">Secure Cloud Strategy</a> was my baby</p>
+                <p>infrastructure engineer and automator for <a href="https://hotspots.dea.ga.gov.au/" target="_blank">Sentinel</a> and <a href="https://earthquakes.ga.gov.au/" target="_blank">Earthquakes</a></p>
+                <p>minor contributor to <a href="https://fingerspell.glitch.me/" target="_blank">Fingerspell</a></p>
+            </div>
+
+            <div id="writing" class="section">
+                <h3>things i've written</h3>
+                <p><a href="https://aws.amazon.com/blogs/machine-learning/relevance-tuning-with-amazon-kendra/" target="_blank">relevance tuning with Amazon Kendra</a></p>
+                <p><a href="https://aws.amazon.com/quickstart/architecture/irap-protected/" target="_blank">architecture docs</a>, <a href="https://fwd.aws/D9yDG" target="_blank">deployment guide</a>, and <a href="https://aws.amazon.com/about-aws/whats-new/2020/02/new-quick-start-deploys-compliance-irap-protected-reference-architecture-on-aws-cloud/" target="_blank">launch announcement</a> for the AWS IRAP Quick Start</p>
+                <p><a href="https://aws.amazon.com/blogs/publicsector/beginning-journey-cloud-australia-new-zealand/" target="_blank">AWS ANZ Public Sector Agency Fast Start Guide</a>, including <a href="https://aws.amazon.com/blogs/publicsector/beginning-journey-cloud-australia-new-zealand/" target="_blank">launch announcement</a></p>
+                <p>lead author of <a href="https://www.dta.gov.au/help-and-advice/technologies/using-cloud-government" target="_blank">Cloud advice for the Australian government</a></p>
+                <p>as well as a bunch of <a href="https://medium.com/@JamesKingsmill" target="_blank">articles</a></p>
+            </div>
+
+            <div id="presentations" class="section">
+                <h3>presentations</h3>
+                <p><a href="https://www.youtube.com/watch?v=aEOEwoDSYlA" target="_blank">wrangling multiple AWS accounts with AWS Organizations</a></p>
+                <p><a href="https://youtu.be/qIGKU0tri8A?t=605" target="_blank">AWS Conformance Packs for ISM and Essential 8</a></p>
+                <p><a href="https://youtu.be/cederkvivEk?t=2168" target="_blank">deploying the AWS IRAP Quick Start</a></p>
+                <p><a href="https://www.slideshare.net/aynsof/terraform-terrible-or-formidable" target="_blank">Terraform: terrible or formidable</a></p>
+                <p><a href="https://www.slideshare.net/aynsof/devops-at-ga" target="_blank">devops at Geoscience Australia</a></p>
+            </div>
+
+            <div id="community" class="section">
+                <h3>community work</h3>
+                <p>former organiser of <a href="https://www.meetup.com/Infrastructure-Coders-Canberra/" target="_blank">Infracoders Canberra</a> and the <a href="https://www.dta.gov.au/help-and-advice/communities-practice#cloud-community" target="_blank">Australian Government Cloud Community</a></p>
+                <p>sometime presenter at the <a href="https://www.youtube.com/channel/UCc2KojudLcVMmyXEJHn4JMA" target="_blank">Canberra AWS User Group</a></p>
+            </div>
+            <div id="contact" class="section">
+                <h3>contact me</h3>
+                <form class="form">
+                    <label>
+                        <p>email</p>
+                        <p>
+                            <input class="form-email" id="Name" placeholder="Your Email"> 
+                        </p>
+                    </label> 
+                    <label>
+                        <p>message</p>
+                        <p>
+                            <textarea class="form-report" id="Form" rows="3" placeholder="Your Message"></textarea>
+                        </p>
+                    </label>
+                </form>
+                <div class="response" id="response"></div>
+                <button type="button" onclick="sendMessage()" class="button" id="FormSubmit">Submit</button> 
+            </div>
+        </div>
+        <footer>
+            <div>made with love in <a href="https://github.com/aynsof/kingsmill.io" target="_blank">CDK</a>.</div>
+        </footer>
+    </body>
+</html>
