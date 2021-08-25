@@ -1,0 +1,268 @@
+
+/***********/
+/* GENERAL */
+/***********/
+
+html {
+	padding: 0;
+	margin: 0;
+	/* background-color: ; */
+	font-weight: 400;
+	font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+body {
+	max-width: 1120px;
+
+    font-size: 1rem;
+}
+
+.section {
+	margin-top: 2.5em;
+}
+
+@media only screen and (max-width: 649px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	body {
+		padding: 0 15px 0 5px;
+		margin: 0 auto;
+	}
+	@media only screen and (min-width: 1185px) {
+		body {
+			padding: 0 60px 0 5px;
+		}
+	}
+	main {
+		min-height: 100vh;
+		display: flex;
+		flex-flow: column;
+	}
+
+	@media only screen and (min-width: 1761px) {
+		main {
+			position: relative;
+			right: 40px;
+		}
+	}
+	article {
+		flex: 1 1 auto;
+	}
+	#sidebar {
+		position: absolute;
+        margin-top: 5em;
+	}
+	header,
+	article {
+		margin-left: 155px;
+	}
+	@media only screen and (max-width: 1200px) {
+		header,
+		article {
+			margin-left: 145px;
+		}
+	}
+	@media only screen and (max-width: 1120px) {
+		header,
+		article {
+			margin-left: 140px;
+		}
+	}
+	@media only screen and (max-width: 1040px) {
+		header,
+		article {
+			margin-left: 135px;
+		}
+	}
+	@media only screen and (max-width: 960px) {
+		header,
+		article {
+			margin-left: 130px;
+		}
+	}
+}
+
+@media only screen and (max-width: 649px) {
+	body {
+		margin: 0 20px;
+	}
+}
+
+svg {
+	fill: currentColor;
+}
+
+/***********/
+/* SIDEBAR */
+/***********/
+
+#sidebar a {
+	display: block;
+}
+
+@media only screen and (min-width: 650px) {
+	#sidebar {
+		font-variant: small-caps;
+		padding: 0 40px 0 10px;
+		width: 100px;
+	}
+	#sidebar a#logo {
+		margin: 1em 0 2em 0;
+	}
+	#sidebar a#logo svg {
+		width: 64px;
+    }
+    #sidebar a.work,
+	#sidebar a.contact {
+		margin-top: 0.5em;
+	}
+}
+
+@media only screen and (max-width: 649px) {
+	#sidebar {
+		justify-content: center;
+		margin: 1.4em 0 0.5em 0;
+	}
+	#sidebar a {
+		border: 1px dotted;
+		padding: 3px 10px;
+		text-align: center;
+		margin: 1px;
+	}
+	#sidebar,
+	#sidebar-links {
+		display: flex;
+	}
+	#sidebar-links {
+		flex-flow: row wrap;
+		margin: 0.5em 0 0 0;
+	}
+	#sidebar a.site,
+	#sidebar a.links {
+		flex: 1 1 40%;
+    }
+}
+
+/***************/
+/* PAGE HEADER */
+/***************/
+
+header {
+	overflow: auto;
+}
+
+header h1 {
+	margin: 0.75em 0;
+	text-align: center;
+	text-transform: none;
+	font-size: 1.5em;
+	line-height: 1.15;
+	font-weight: 600;
+	letter-spacing: -1px;
+}
+
+@media only screen and (max-width: 649px) {
+	header h1 {
+		font-size: 2em;
+	}
+}
+
+
+/***********/
+/* CONTENT */
+/***********/
+
+@media only screen and (min-width: 650px) {
+	#content {
+        margin-left: 200px;
+    }
+    
+    #content p {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 649px) {
+	#sidebar {
+		justify-content: center;
+		margin: 1.4em 0 0.5em 0;
+	}
+	#sidebar a {
+		border: 1px dotted;
+		padding: 3px 10px;
+		text-align: center;
+		margin: 1px;
+	}
+	#sidebar,
+	#sidebar-links {
+		display: flex;
+	}
+	#sidebar-links {
+		flex-flow: row wrap;
+		margin: 0.5em 0 0 0;
+	}
+	#sidebar a.site,
+	#sidebar a.links {
+		flex: 1 1 40%;
+    }
+}
+
+.submit-error {
+	color: red;
+}
+
+.submit-success {
+	color: green;
+}
+
+.response {
+	margin-top: 2.5em;
+}
+
+.form-email {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.form-report {
+	width: 30%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.button {
+	width: 30%;
+	background-color: grey;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	margin-left: 50px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+.button:hover {
+	background-color: darkgrey;
+  }
+
+footer {
+	/* margin-top: 5em; */
+	padding: 50px;
+	text-align: center;
+}
